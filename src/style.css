@@ -1,0 +1,79 @@
+html, body, #root, .App {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+  }
+  
+.container {
+    position: relative;
+    width: calc(100% - 450px);
+    height: calc(100vh - 180px);
+    overflow: auto;
+    margin-left: 250px;
+    margin-right: 200px;
+    background-color: #ccc;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 0;
+    padding: 15px;
+}
+  
+header {
+    height: 50px;
+    background-color: #6c7ae0;
+    color: white;
+    align-items: center;
+    position: sticky;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    background-color: #6c7ae0;
+    color: white;
+    text-align: center;
+    clear: both;
+}
+
+.left-panel {
+    width: 250px;
+    background-color: #b4b8ff;
+    position: absolute;
+    top: 50px;
+    bottom: 100px;
+    left: 0;
+    float: left;
+}
+
+.right-panel {
+    width: 200px;
+    background-color: #dde1ff;
+    position: absolute;
+    top: 50px;
+    bottom: 100px;
+    right: 0;
+    float: right;
+}
+
+.tile {
+    background-color: #3498db;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    box-sizing: border-box;
+}
